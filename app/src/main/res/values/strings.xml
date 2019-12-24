@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Find User</string>
+    <string-array name="Hobbies">
+        <item>Football</item>
+        <item>Dancing</item>
+        <item>Painting</item>
+        <item>Trekking</item>
+        <item>Cricket</item>
+        <item>Basketball</item>
+        <item>Reading</item>
+        <item>Music</item>
+        <item>Rap</item>
+        <item>Programming</item>
+        <item>Video-Games</item>
+        <item>Road-Trips</item>
+        <item>Collection-Hobbies</item>
+        <item>Gym</item>
+        <item>Anime</item>
+        <item>Movies</item>
+        <item>TV-Series</item>
+        <item>Origami</item>
+        <item>Blogging</item>
+    </string-array>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1053702614331",
+    "firebase_url": "https://find-user-7e28e.firebaseio.com",
+    "project_id": "find-user-7e28e",
+    "storage_bucket": "find-user-7e28e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053702614331:android:1122f9ea4ca7c0a67cdb1e",
+        "android_client_info": {
+          "package_name": "com.example.finduser"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053702614331-34m3kg3jibn3s5gfdak5in3k10uj0lds.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.finduser",
+            "certificate_hash": "f9089355e1aeb6987cfe61225695fdb8e644cebb"
+          }
+        },
+        {
+          "client_id": "1053702614331-f8jlk44cq6h2jjqibheqlo9bpadgjeu4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEszaTKwHxAz7yKbDTob-_xwk2fZ0I9Vs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053702614331-f8jlk44cq6h2jjqibheqlo9bpadgjeu4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
