@@ -57,9 +57,9 @@ public class UserActivity extends AppCompatActivity {
         rgMyGender = findViewById(R.id.rgMyGender);
         btnMatch =findViewById(R.id.btnMatch);
         rgDrink = findViewById(R.id.rgDrink);
-        rgSmoke = findViewById(R.id.rgSmoke);
+        //rgSmoke = findViewById(R.id.rgSmoke);
         etLocality = findViewById(R.id.etLocality);
-        etLower = findViewById(R.id.etLower);
+        //etLower = findViewById(R.id.etLower);
 
         mAuth = FirebaseAuth.getInstance();
         userId = mAuth.getCurrentUser().getUid();

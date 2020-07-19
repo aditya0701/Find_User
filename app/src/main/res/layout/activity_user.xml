@@ -3,151 +3,227 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="@color/text_shadow_white"
+    android:orientation="vertical"
     tools:context=".UserActivity">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
             android:text="Gender Preference"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="30sp"
-            android:gravity="center"/>
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <RadioGroup
             android:id="@+id/rgGender"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
             <RadioButton
                 android:id="@+id/rbMale"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_bg2"
+                android:onClick="checkButton"
+                android:padding="16dp"
                 android:text="Male"
-                android:onClick="checkButton"/>
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <RadioButton
                 android:id="@+id/rbFemale"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_bg2"
+                android:onClick="checkButton"
+                android:padding="16dp"
                 android:text="Female"
-                android:onClick="checkButton"/>
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </RadioGroup>
+
         <TextView
             android:id="@+id/textView9"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
             android:text="Your Gender"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="30sp"
-            android:gravity="center"/>
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgGender" />
+
         <RadioGroup
             android:id="@+id/rgMyGender"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9">
+
             <RadioButton
                 android:id="@+id/rbMMale"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_bg2"
+                android:onClick="checkButton4"
+                android:padding="16dp"
                 android:text="Male"
-                android:onClick="checkButton4"/>
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <RadioButton
                 android:id="@+id/rbMFemale"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_bg2"
+                android:onClick="checkButton4"
+                android:padding="16dp"
                 android:text="Female"
-                android:onClick="checkButton4"/>
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
         </RadioGroup>
 
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center"
+            android:text="Hobbies"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="30sp"
             android:textStyle="bold"
-            android:gravity="center"
-            android:text="Hobbies" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rgMyGender" />
 
         <MultiAutoCompleteTextView
             android:id="@+id/acHobbies"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/round_background"
+            android:hint="Select Hobbies From Auto Select"
+            android:padding="16sp"
             android:text=""
-            android:hint="Select Hobbies From Auto Select"/>
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="25sp"
-            android:text="Enter Your School/College/Workplace" />
+            android:textColorHint="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
         <EditText
             android:id="@+id/etLocality"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/round_background"
             android:ems="10"
+            android:hint="Enter locality"
             android:inputType="textCapWords"
+            android:padding="16dp"
             android:text=""
-            android:hint="Enter locality"/>
+            android:textColorHint="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/acHobbies" />
 
         <TextView
             android:id="@+id/textView6"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textSize="25sp"
-            android:text="Do you Drink???" />
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:gravity="center_horizontal"
+            android:text="Do you Drink???"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etLocality" />
+
         <RadioGroup
-            android:layout_width="match_parent"
+            android:id="@+id/rgDrink"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:id="@+id/rgDrink">
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6">
+
             <RadioButton
                 android:id="@+id/rbYes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round_bg2"
+                android:onClick="checkButton2"
+                android:padding="16dp"
                 android:text="Yes"
-                android:onClick="checkButton2"/>
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <RadioButton
                 android:id="@+id/rbNo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round_bg2"
+                android:onClick="checkButton2"
+                android:padding="16dp"
                 android:text="No"
-                android:onClick="checkButton2"/>
-        </RadioGroup>
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="25sp"
-            android:text="Do you Smoke???" />
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/rgSmoke">
-            <RadioButton
-                android:id="@+id/rbDyes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Yes"
-                android:onClick="checkButton3"/>
-
-            <RadioButton
-                android:id="@+id/rbDno"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="No"
-                android:onClick="checkButton3"/>
+                android:textSize="18sp"
+                android:textStyle="bold" />
         </RadioGroup>
 
-        <TextView
+        <!--<TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -163,14 +239,23 @@
             android:ems="10"
             android:inputType="number"
             android:text=""
-            android:hint="Age"/>
+            android:hint="Age"/-->
         <Button
             android:id="@+id/btnMatch"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="Find a Match"/>
-    </LinearLayout>
-
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/round_background"
+            android:padding="16dp"
+            android:text="Find a Match"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </ScrollView>
